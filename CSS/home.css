@@ -27,12 +27,21 @@
   border: 1px solid black;
 }
 
+.left,
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .left {
   background-color: cyan;
   flex: 1;
+  height: 100vh;
 }
 
 .right {
   background-color: lawngreen;
   flex: 1;
+  height: 100vh;
 }
