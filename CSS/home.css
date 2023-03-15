@@ -40,6 +40,14 @@
   height: 100vh;
 }
 
+.left:hover {
+  background-color: rgb(252, 44, 72);
+}
+
+.right:hover {
+  background-color: rgb(252, 44, 238);
+}
+
 .right {
   background-color: lawngreen;
   flex: 1;
