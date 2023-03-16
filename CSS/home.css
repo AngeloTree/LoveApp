@@ -18,13 +18,11 @@
 }
 
 .main {
-  background-color: rgb(237, 171, 171);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 100vh;
-  border: 1px solid black;
+  min-height: 60vh;
 }
 
 .center {
@@ -32,12 +30,39 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: aqua;
-  min-height: 50vh;
   width: 100%;
-  gap: 30px;
+  gap: 15px;
 }
 
 .middle {
   margin-top: 150px;
+}
+
+.calc {
+  padding: 10px 16px;
+  background-color: rgb(62, 210, 69);
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  color: white;
+}
+
+.one h2,
+.two h2 {
+  margin-bottom: 10px;
+}
+
+.one h2 {
+  color: rgb(47, 151, 226);
+}
+
+.two h2 {
+  color: rgb(255, 0, 238);
+}
+
+.one input,
+.two input {
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: 2px 2px;
 }
