@@ -1,3 +1,5 @@
+const calcButton = document.querySelector(".calc");
+
 const options = {
   method: "GET",
   headers: {
@@ -10,3 +12,7 @@ fetch(
   "https://love-calculator.p.rapidapi.com/getPercentage?sname=Alice&fname=John'",
   options
 ).then((res) => console.log(res));
+
+calcButton.addEventListener("click", (event) => {
+  console.log("click");
+});

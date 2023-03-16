@@ -55,6 +55,7 @@ body {
   border: none;
   font-size: 15px;
   color: white;
+  cursor: pointer;
 }
 
 .calc:hover {
