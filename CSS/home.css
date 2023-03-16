@@ -27,29 +27,17 @@
   border: 1px solid black;
 }
 
-.left,
-.right {
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  background-color: aqua;
+  min-height: 50vh;
+  width: 100%;
+  gap: 30px;
 }
 
-.left {
-  background-color: cyan;
-  flex: 1;
-  height: 100vh;
-}
-
-.left:hover {
-  background-color: rgb(252, 44, 72);
-}
-
-.right:hover {
-  background-color: rgb(252, 44, 238);
-}
-
-.right {
-  background-color: lawngreen;
-  flex: 1;
-  height: 100vh;
+.middle {
+  margin-top: 150px;
 }
