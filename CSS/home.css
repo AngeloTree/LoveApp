@@ -1,6 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+body {
+  background: url(../images/heart.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .header {
@@ -9,12 +18,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
 }
 
 .header h1 {
-  color: rgb(236, 50, 81);
+  color: rgb(159, 42, 218);
+  border-bottom: 2px solid black;
 }
 
 .main {
@@ -47,22 +57,24 @@
   color: white;
 }
 
+.calc:hover {
+  background-color: rgb(255, 13, 0);
+}
+
 .one h2,
 .two h2 {
   margin-bottom: 10px;
+  font-size: 20px;
 }
 
-.one h2 {
-  color: rgb(47, 151, 226);
-}
-
+.one h2,
 .two h2 {
-  color: rgb(255, 0, 238);
+  color: rgb(162, 251, 45);
 }
 
 .one input,
 .two input {
   border-radius: 8px;
-  border: 1px solid black;
-  padding: 2px 2px;
+  border: none;
+  padding: 2px 8px;
 }
