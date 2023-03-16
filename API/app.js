@@ -1,4 +1,6 @@
 const calcButton = document.querySelector(".calc");
+const oneInput = document.querySelector(".one-input");
+const twoInput = document.querySelector(".two-input");
 
 const options = {
   method: "GET",
@@ -8,11 +10,19 @@ const options = {
   },
 };
 
-fetch(
-  "https://love-calculator.p.rapidapi.com/getPercentage?sname=Alice&fname=John'",
-  options
-).then((res) => console.log(res));
+const fetchFunc = (one, two) => {
+  fetch(
+    `https://love-calculator.p.rapidapi.com/getPercentage?sname=${one}&fname=${two}'`,
+    options
+  )
+    .then((response) => response.json())
+    .then((response) => console.log(response))
+    .catch((err) => console.error(err));
+};
 
 calcButton.addEventListener("click", (event) => {
-  console.log("click");
+  personOne = oneInput.value;
+  personTwo = twoInput.value;
+  console.log(personOne, personTwo);
+  fetchFunc(personOne, personTwo);
 });
