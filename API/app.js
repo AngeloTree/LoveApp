@@ -1,6 +1,8 @@
 const calcButton = document.querySelector(".calc");
 const oneInput = document.querySelector(".one-input");
 const twoInput = document.querySelector(".two-input");
+const percent = document.querySelector(".percent");
+const result = document.querySelector(".result");
 
 const options = {
   method: "GET",
@@ -16,7 +18,10 @@ const fetchFunc = (one, two) => {
     options
   )
     .then((response) => response.json())
-    .then((response) => console.log(response))
+    .then((response) => {
+      percent.textContent = "Percent: " + response.percentage;
+      result.textContent = "Result: " + response.result;
+    })
     .catch((err) => console.error(err));
 };
 

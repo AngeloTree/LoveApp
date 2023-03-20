@@ -79,3 +79,22 @@ body {
   border: none;
   padding: 2px 8px;
 }
+
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 162, 255, 0.507);
+  height: 100px;
+  flex-direction: column;
+  gap: 15px;
+  border: 1px solid black;
+}
+
+.percent {
+  color: rgb(206, 227, 87);
+}
+
+.result {
+  color: rgb(79, 237, 206);
+}
